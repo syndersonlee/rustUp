@@ -11,6 +11,7 @@ fn main() {
 
     println!("The secret number is: {}", secret_number);
 
+    
     loop {
         println!("Please input your guess.");
 

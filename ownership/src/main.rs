@@ -5,6 +5,7 @@ fn main() {
     // //s1 is invalid
     // println!("{}", s2);
 
+    //소유권
     let s = String::from("hello");
     takes_ownership(s);
     let x = 5;                      
@@ -17,4 +18,8 @@ fn takes_ownership (some_string : String) {
 
 fn makes_copy (some_integer : i32) {
     println!("{}", some_integer);
+}
+
+fn calculate_length (s : &String) -> usize {
+    s.len()
 }

@@ -19,7 +19,4 @@ fn takes_ownership (some_string : String) {
 fn makes_copy (some_integer : i32) {
     println!("{}", some_integer);
 }
-
-fn calculate_length (s : &String) -> usize {
-    s.len()
-}
+ 

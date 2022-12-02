@@ -34,8 +34,7 @@ fn first_word_rev(s : &String) -> usize {
         }
     }
 
-    
-
     s[..]
 }
 
+// In Project, if you want to slice string before change, rust prevent to lose existed lose.

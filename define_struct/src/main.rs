@@ -26,16 +26,24 @@ fn main() {
         sign_in_count : 1,
     };
 
-    let user2 = build_user(
+
+    
+
+    let mut user2 = build_user(
         String::from("winnery93@gmail.com"), 
         String::from("syndersonLEE")
     );
 
+    
+
     let user3 = User {
-        email : String::from("sangyun@finda.co.kr"),
-        username : String::from("sangyun"),
         ..user2
     };
 
+    user2.email = String::from("abc");
+
+    println!("{}", user2.email);
     println!("{}", user3.email);
 }
+
+

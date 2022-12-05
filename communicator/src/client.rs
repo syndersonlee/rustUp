@@ -1,15 +1,3 @@
-mod client {
-    fn connect() {
-        
-    }
+pub fn connect() {
 }
 
-mod network {
-    fn connect() {
-    }
-    
-    mod server {
-        fn connect() {
-        }
-    }
-}

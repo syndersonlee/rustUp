@@ -1,7 +1,4 @@
-mod network {
-    fn connect() {
-    }
+pub fn connect() {
 }
-
 
 mod server;

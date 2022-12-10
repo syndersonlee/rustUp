@@ -29,12 +29,13 @@ fn main() {
     for (key, value) in &scores {
         println!("{}: {}", key, value);
     }
+    
 
     let mut scores_overwrites = HashMap::new();
     scores_overwrites.insert(String::from("Blue"), 10);
     scores_overwrites.entry(String::from("Yellow")).or_insert(50);
     scores_overwrites.entry(String::from("Blue")).or_insert(50);
 
-    
+
     println!("{:?}", scores_overwrites);
 }
